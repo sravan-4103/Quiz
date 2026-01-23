@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Game</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="scrn active" id="start-scrn">
+            <h1>Give this Quiz</h1>
+            <p> Test your global map general knowledge with these fun questions</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <div class="scrn" id="quiz-scrn">
+            <div class="quiz-header">
+                <h2 id="Q-text">Question is updated here by js</h2>
+                <div class="quiz-info">
+                    <p>
+                        Question <span id="curr-question">1</span> of <span id="tot-questions">5</span>
+                    </p>
+
+                    <p>
+                        score: <span id="score">0</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="ans-container" class="ans-container">
+                <!-- answer buttons will come here by js -->
+            </div>
+
+            <div class="prog-bar">
+                <div id="prog" class="prog"></div>
+            </div>
+        </div>
+
+        <div class="scrn" id="result-scrn">
+            <h1>Quiz results</h1>
+            <div class="result-info">
+                <p>You Scored <span id="final-score">0</span> out of <span id="maximum-score">5</span></p>
+
+                <div id="result-msg">Good job</div>
+            </div>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+</body>
+</html>
